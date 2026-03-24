@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Cinzel+Decorative:wght@400;700;900&family=Forum&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "DM Sans", sans-serif;
+  --font-cursive: "Dancing Script", cursive;
+  --font-brand: "Cormorant Garamond", serif;
+  --font-decorative: "Cinzel Decorative", cursive;
+  --font-forum: "Forum", serif;
+
+  --color-gold: #D4AF37;
+  --color-gold-light: #F9E79F;
+  --color-beige-warm: #E6D3A3;
+  --color-beige-soft: #E8DCC5;
+  --color-dark: #0A0A0A;
+  --color-dark-soft: #1A1A1A;
+
+  --color-ayurvedic-green: #2F5D50;
+  --color-warm-sand: #F5EFE6;
+  --color-soft-gold: #C9A96E;
+
+  --shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.05);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-dark text-white font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.glass {
+  background: rgba(26, 26, 26, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F9E79F 50%, #D4AF37 100%);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F9E79F 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gold/30 rounded-full hover:bg-gold/50 transition-colors;
+}
