@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 
 export const WhatsAppButton = () => {
-  const whatsappUrl = "https://wa.me/919997389985?text=Hello%2C%20I%20would%20like%20to%20book%20a%20therapy%20session";
+  const whatsappUrl = "https://wa.me/919997115495?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20service%20at%20Arogya%20Spa.";
 
   return (
     <motion.a 

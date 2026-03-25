@@ -56,19 +56,18 @@ export const About = () => {
               <span className="font-cursive text-gold-light text-2xl mb-4 block">A legacy of healing</span>
               <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">
                 Healing Traditions <br />
-                <span className="italic">by the Holy Ganga</span>
+                <span className="italic">in Peaceful Tapovan</span>
               </h2>
               <p className="text-white/70 text-lg mb-8 leading-relaxed">
-                Kalptaru Ayurvedshala is more than just a spa; it's a sanctuary for authentic Ayurvedic healing. 
-                Nestled near Ram Jhula and Ganga Beach in Rishikesh, we bring centuries-old traditions to life 
-                through professional therapists and pure herbal oils.
+                Arogya Spa is one of the most trusted wellness spas in Rishikesh located in the peaceful Tapovan area near Laxman Jhula. The spa offers relaxing therapies designed to reduce stress, relieve muscle pain, and restore energy using natural oils and holistic techniques. Visitors can enjoy a calm and hygienic environment with soothing music, relaxing aroma, and professional therapists. Whether you are a tourist visiting Rishikesh or a local resident looking for relaxation, Arogya Spa provides a perfect escape for body and mind.
               </p>
               <div className="space-y-6 mb-10">
                 {[
-                  "Professional & Certified Therapists",
-                  "Authentic Homemade Herbal Oils",
-                  "Calm & Peaceful Environment",
-                  "Located in the Heart of Rishikesh"
+                  "Professional massage therapists",
+                  "Clean and hygienic spa rooms",
+                  "Peaceful Himalayan ambiance",
+                  "Affordable luxury spa services",
+                  "Perfect for post-trek relaxation"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-4">
                     <div className="w-6 h-6 rounded-full border border-gold flex items-center justify-center">

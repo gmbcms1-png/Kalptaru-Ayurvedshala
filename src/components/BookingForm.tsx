@@ -65,7 +65,7 @@ export const BookingForm = () => {
       
       const formattedMessage = `Hello, I would like to book a therapy.%0A%0AName: ${formData.name}%0APhone: ${formData.phone}%0AEmail: ${formData.email}%0AService: ${formData.service}%0ADate: ${formData.date}%0ATime: ${formData.time}${formData.message ? `%0AMessage: ${formData.message}` : ''}%0A%0APlease confirm my appointment.`;
       
-      window.open(`https://wa.me/919997389985?text=${formattedMessage}`, '_blank');
+      window.open(`https://wa.me/919997115495?text=${formattedMessage}`, '_blank');
     }, 1000);
   };
 

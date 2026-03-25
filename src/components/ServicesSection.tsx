@@ -83,7 +83,7 @@ export const ServicesSection = () => {
 
         <div className="mt-20 text-center">
           <button 
-            onClick={() => handleBookNow("Ayurvedic Massage")}
+            onClick={() => window.open(`https://wa.me/919997115495?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20service%20at%20Arogya%20Spa.`, '_blank')}
             className="px-12 py-5 bg-ayurvedic-green text-warm-sand rounded-full font-bold uppercase tracking-widest text-sm hover:bg-ayurvedic-green/90 transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1"
           >
             Book Your Experience
@@ -173,7 +173,7 @@ export const ServicesSection = () => {
                   </div>
 
                   <button 
-                    onClick={() => handleBookNow(selectedService.title)}
+                    onClick={() => window.open(`https://wa.me/919997115495?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20${encodeURIComponent(selectedService.title)}%20at%20Arogya%20Spa.`, '_blank')}
                     className="w-full py-5 bg-ayurvedic-green text-warm-sand rounded-xl font-bold uppercase tracking-widest text-sm flex items-center justify-center gap-3 hover:bg-ayurvedic-green/90 transition-all shadow-lg"
                   >
                     Book Now

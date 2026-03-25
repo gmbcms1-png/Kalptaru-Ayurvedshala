@@ -143,19 +143,18 @@ export const Home = () => {
               <span className="font-cursive text-gold-light text-2xl mb-4 block">A legacy of healing</span>
               <h2 className="text-4xl md:text-5xl font-serif mb-8 leading-tight">
                 Healing Traditions <br />
-                <span className="italic">by the Holy Ganga</span>
+                <span className="italic">in Peaceful Tapovan</span>
               </h2>
               <p className="text-white/70 text-lg mb-8 leading-relaxed">
-                Kalptaru Ayurvedshala is more than just a spa; it's a sanctuary for authentic Ayurvedic healing. 
-                Nestled near Ram Jhula and Ganga Beach in Rishikesh, we bring centuries-old traditions to life 
-                through professional therapists and pure herbal oils.
+                Arogya Spa is one of the most trusted wellness spas in Rishikesh located in the peaceful Tapovan area near Laxman Jhula. The spa offers relaxing therapies designed to reduce stress, relieve muscle pain, and restore energy using natural oils and holistic techniques. Visitors can enjoy a calm and hygienic environment with soothing music, relaxing aroma, and professional therapists. Whether you are a tourist visiting Rishikesh or a local resident looking for relaxation, Arogya Spa provides a perfect escape for body and mind.
               </p>
               <div className="space-y-6 mb-10">
                 {[
-                  "Professional & Certified Therapists",
-                  "Authentic Homemade Herbal Oils",
-                  "Calm & Peaceful Environment",
-                  "Located in the Heart of Rishikesh"
+                  "Professional massage therapists",
+                  "Clean and hygienic spa rooms",
+                  "Peaceful Himalayan ambiance",
+                  "Affordable luxury spa services",
+                  "Perfect for post-trek relaxation"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-4">
                     <div className="w-6 h-6 rounded-full border border-gold flex items-center justify-center">
@@ -343,9 +342,9 @@ export const Home = () => {
                     <div>
                       <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-3">Address</h4>
                       <p className="text-white/60 text-lg leading-relaxed font-light">
-                        Ram Jhula, near Police Station, <br />
-                        Swarg Ashram, Rishikesh, <br />
-                        Uttarakhand – 249304
+                        Opp Tapovan Resort Laxman Jhula Parking, <br />
+                        Tapovan, Rishikesh, <br />
+                        Uttarakhand 249192, India
                       </p>
                     </div>
                   </div>
@@ -355,13 +354,13 @@ export const Home = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-3">Phone</h4>
-                      <p className="text-white/60 text-lg font-light">099973 89985</p>
+                      <p className="text-white/60 text-lg font-light">+91 99971 15495</p>
                     </div>
                   </div>
                 </div>
                 <div className="mt-12 pt-12 border-t border-gold/10">
                   <a 
-                    href="https://www.google.com/maps/dir/?api=1&destination=Kalptaru+Ayurvedshala+Rishikesh" 
+                    href="https://www.google.com/maps/dir/?api=1&destination=Opp+Tapovan+Resort+Laxman+Jhula+Parking,+Tapovan,+Rishikesh" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="w-full py-4 bg-gold text-dark font-bold uppercase tracking-widest text-sm flex items-center justify-center gap-3 hover:bg-gold-light transition-all duration-300 shadow-lg shadow-gold/20"
@@ -379,7 +378,7 @@ export const Home = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-bold uppercase tracking-widest text-xs mb-1">Follow Us</h4>
-                    <span className="text-gold text-sm">@kalptaru_ayurvedshala</span>
+                    <span className="text-gold text-sm">@arogyasparishikesh</span>
                   </div>
                 </div>
                 <ChevronRight className="text-gold w-6 h-6" />
@@ -388,7 +387,7 @@ export const Home = () => {
 
             <div className="h-full min-h-[500px] rounded-[2.5rem] overflow-hidden border border-gold/20 grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.261448839446!2d78.3121!3d30.1234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA3JzI0LjIiTiA3OMKwMTgnNDMuNiJF!5e0!3m2!1sen!2sin!4v1647850000000!5m2!1sen!2sin" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13768.90302927289!2d78.3150064!3d30.1260424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909163f96603a1b%3A0x6b40552787c8003a!2sTapovan%2C%20Rishikesh%2C%20Uttarakhand%20249192!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

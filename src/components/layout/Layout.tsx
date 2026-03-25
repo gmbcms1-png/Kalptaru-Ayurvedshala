@@ -72,14 +72,14 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${isScrolled || location.pathname !== '/' ? 'glass py-3 md:py-4 shadow-2xl' : 'bg-transparent py-4 md:py-6'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-[150] transition-all duration-500 ${isScrolled || location.pathname !== '/' ? 'glass py-3 md:py-4 shadow-2xl' : 'bg-transparent py-4 md:py-6'}`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex flex-col z-[70] group">
           <span className="text-xl md:text-2xl font-decorative text-beige-warm tracking-[0.1em] lowercase leading-tight drop-shadow-sm group-hover:drop-shadow-[0_0_8px_rgba(230,211,163,0.4)] transition-all duration-500">
-            kalptaru ayurvedshala
+            arogya spa
           </span>
           <span className="text-[7px] md:text-[9px] font-forum text-beige-soft/80 uppercase tracking-[0.3em] mt-0.5">
-            Ayurvedic Salon & Spa
+            Luxury Day Spa
           </span>
         </Link>
 
@@ -95,17 +95,19 @@ export const Navbar = () => {
               <span className={`absolute -bottom-1 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full ${location.pathname === link.href ? 'w-full' : ''}`} />
             </Link>
           ))}
-          <Link 
-            to="/#book" 
+          <a 
+            href="https://wa.me/919997115495?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20service%20at%20Arogya%20Spa."
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-2 border border-gold text-gold text-xs uppercase tracking-widest hover:bg-gold hover:text-dark transition-all duration-300"
           >
             Book Now
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-gold z-[70] p-2 focus:outline-none"
+          className="md:hidden text-gold z-[70] p-4 -mr-4 focus:outline-none"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle Menu"
         >
@@ -162,13 +164,15 @@ export const Navbar = () => {
                 </motion.div>
               ))}
               <motion.div variants={itemVariants} className="pt-4">
-                <Link 
-                  to="/#book" 
+                <a 
+                  href="https://wa.me/919997115495?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20a%20service%20at%20Arogya%20Spa."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="inline-block w-full text-center px-6 py-4 border border-gold text-gold font-bold uppercase tracking-widest text-xs hover:bg-gold hover:text-dark transition-all"
                 >
                   Book Appointment
-                </Link>
+                </a>
               </motion.div>
             </div>
 
@@ -178,7 +182,7 @@ export const Navbar = () => {
             >
               <div className="flex items-center gap-4 text-white/60">
                 <Phone className="w-4 h-4 text-gold" />
-                <span className="text-sm tracking-widest">099973 89985</span>
+                <span className="text-sm tracking-widest">+91 99971 15495</span>
               </div>
               <div className="flex items-center gap-4 text-white/60">
                 <MapPin className="w-4 h-4 text-gold" />
@@ -188,7 +192,7 @@ export const Navbar = () => {
                 <a href="https://instagram.com" className="text-gold hover:text-white transition-colors">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="tel:09997389985" className="text-gold hover:text-white transition-colors">
+                <a href="tel:+919997115495" className="text-gold hover:text-white transition-colors">
                   <Phone className="w-6 h-6" />
                 </a>
               </div>
@@ -208,10 +212,10 @@ export const Footer = () => {
           <div className="md:col-span-1">
             <Link to="/" className="flex flex-col mb-8 group">
               <span className="text-3xl font-decorative text-beige-warm tracking-[0.1em] lowercase leading-tight drop-shadow-sm group-hover:drop-shadow-[0_0_8px_rgba(230,211,163,0.4)] transition-all duration-500">
-                kalptaru ayurvedshala
+                arogya spa
               </span>
               <span className="text-[10px] font-forum text-beige-soft/80 uppercase tracking-[0.3em] mt-1">
-                Ayurvedic Salon & Spa
+                Luxury Day Spa
               </span>
             </Link>
             <p className="text-white/50 leading-relaxed mb-8">
@@ -222,7 +226,7 @@ export const Footer = () => {
               <a href="https://instagram.com" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gold hover:bg-gold hover:text-dark transition-all">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="tel:09997389985" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gold hover:bg-gold hover:text-dark transition-all">
+              <a href="tel:+919997115495" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gold hover:bg-gold hover:text-dark transition-all">
                 <Phone className="w-5 h-5" />
               </a>
             </div>
@@ -234,14 +238,14 @@ export const Footer = () => {
               <div className="flex gap-4">
                 <MapPin className="text-gold w-5 h-5 shrink-0" />
                 <span className="text-white/70 text-sm leading-relaxed">
-                  Ram Jhula, near Police Station, <br />
-                  Swarg Ashram, Rishikesh, <br />
-                  Uttarakhand – 249304
+                  Opp Tapovan Resort Laxman Jhula Parking, <br />
+                  Tapovan, Rishikesh, <br />
+                  Uttarakhand 249192, India
                 </span>
               </div>
               <div className="flex gap-4">
                 <Phone className="text-gold w-5 h-5 shrink-0" />
-                <span className="text-white/70 text-sm">099973 89985</span>
+                <span className="text-white/70 text-sm">+91 99971 15495</span>
               </div>
               <div className="flex gap-4">
                 <Clock className="text-gold w-5 h-5 shrink-0" />
@@ -287,7 +291,7 @@ export const Footer = () => {
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-white/30 text-xs uppercase tracking-widest">
-            © 2026 Kalptaru Ayurvedshala. All Rights Reserved.
+            © 2026 Arogya Spa. All Rights Reserved.
           </p>
           <div className="flex gap-8 text-white/30 text-[10px] uppercase tracking-widest">
             <Link to="#" className="hover:text-gold">Privacy Policy</Link>

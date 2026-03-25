@@ -105,13 +105,15 @@ const ServiceModal = ({ service, isOpen, onClose }: { service: Service | null, i
                 </div>
 
                 <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-gold/10 flex flex-col sm:flex-row gap-4">
-                  <Link 
-                    to={`/?service=${encodeURIComponent(service.title)}#book`} 
+                  <a 
+                    href={`https://wa.me/919997115495?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20booking%20${encodeURIComponent(service.title)}%20at%20Arogya%20Spa.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     onClick={onClose}
                     className="flex-1 px-8 py-4 bg-gold text-dark font-bold uppercase tracking-widest text-xs text-center hover:bg-gold-light transition-all duration-300 shadow-lg shadow-gold/20"
                   >
                     Book This Service
-                  </Link>
+                  </a>
                   <button 
                     onClick={onClose}
                     className="flex-1 px-8 py-4 border border-gold/30 text-gold font-bold uppercase tracking-widest text-xs hover:bg-gold/5 transition-all duration-300"
